@@ -13,33 +13,42 @@ import SocketIOClientSwift
 
 class GameScene: SKScene {
 
-    let player = SKSpriteNode(imageNamed:"Spaceship");
+    var player = SKSpriteNode();
     var wPressed = false;
     var aPressed = false;
     var sPressed = false;
     var dPressed = false;
+    let socket = SocketIOClient(socketURL: NSURL(string: "http://192.168.1.113:3000")!, options: [.Log(false), .ForcePolling(true)])
     
     override func didMoveToView(view: SKView) {
         
-        let socket = SocketIOClient(socketURL: NSURL(string: "http://192.168.1.113:3000")!, options: [.Log(true), .ForcePolling(true)])
+        player.position = CGPointMake(200, 200)
         
         socket.on("connect") {data, ack in
-            print("socket connected")
+            print("got connected");
+            //self.socket.emit("addPlayer", ["xLocation": self.player.position.x, "yLocation": self.player.position.y, "orientation":self.player.zRotation]);
         }
+        
         
         socket.on("currentAmount") {data, ack in
             if let cur = data[0] as? Double {
-                socket.emitWithAck("canUpdate", cur)(timeoutAfter: 0) {data in
-                    socket.emit("update", ["amount": cur + 2.50])
+                self.socket.emitWithAck("canUpdate", cur)(timeoutAfter: 0) {data in
+                    self.socket.emit("update", ["amount": cur + 2.50])
                 }
                 
                 ack.with("Got your currentAmount", "dude")
             }
         }
         
-        socket.connect()
+        socket.on("addPlayer") {data, ack in
+            
+            print("\(data)");
+            
+            //self.player = SKSpriteNode(imageNamed:"Spaceship");
+            
+        }
         
-        player.position = CGPointMake(200, 200)
+        socket.connect()
         
         player.setScale(0.5)
         
@@ -130,7 +139,7 @@ class GameScene: SKScene {
         if(dPressed==true){
             moveX+=20;
         }
-        
+        //self.socket.emit("update", ["xLocation": player.position.x, "yLocation":player.position.y, "orientation":player.zRotation]);
         let movePlayer = SKAction.moveTo(CGPointMake(moveX, moveY), duration: 0.1);
         player.runAction(movePlayer);
 
