@@ -14,6 +14,7 @@
 		91FD456A1C77B2E200A606AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45681C77B2E200A606AF /* MainMenu.xib */; };
 		91FD45751C77B2E200A606AF /* Room_ShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD45741C77B2E200A606AF /* Room_ShooterTests.swift */; };
 		91FD45801C77B2E200A606AF /* Room_ShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */; };
+		91FD458E1C77B68B00A606AF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD458D1C77B68B00A606AF /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +60,7 @@
 		91FD457B1C77B2E200A606AF /* Room ShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Room ShooterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room_ShooterUITests.swift; sourceTree = "<group>"; };
 		91FD45811C77B2E200A606AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A75DFFC1C77B4D700C547B8 /* Room Shooter Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Room Shooter Server"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91FD458D1C77B68B00A606AF /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +121,7 @@
 			children = (
 				91FD45601C77B2E100A606AF /* AppDelegate.swift */,
 				91FD45621C77B2E100A606AF /* GameScene.swift */,
+				91FD458D1C77B68B00A606AF /* Network.swift */,
 				91FD45641C77B2E100A606AF /* GameScene.sks */,
 				91FD45661C77B2E100A606AF /* Assets.xcassets */,
 				91FD45681C77B2E200A606AF /* MainMenu.xib */,
@@ -300,6 +302,7 @@
 			files = (
 				91FD45631C77B2E100A606AF /* GameScene.swift in Sources */,
 				91FD45611C77B2E100A606AF /* AppDelegate.swift in Sources */,
+				91FD458E1C77B68B00A606AF /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Room Shooter Server.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Room Shooter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>91FD457A1C77B2E200A606AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A75DFFB1C77B4D700C547B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
