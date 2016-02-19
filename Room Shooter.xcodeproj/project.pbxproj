@@ -15,6 +15,7 @@
 		91FD45751C77B2E200A606AF /* Room_ShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD45741C77B2E200A606AF /* Room_ShooterTests.swift */; };
 		91FD45801C77B2E200A606AF /* Room_ShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */; };
 		91FD458E1C77B68B00A606AF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD458D1C77B68B00A606AF /* Network.swift */; };
+		91FD45C11C77D33F00A606AF /* SocketIOClientSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FD45B61C77D31E00A606AF /* SocketIOClientSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 91FD455C1C77B2E100A606AF;
 			remoteInfo = "Room Shooter";
+		};
+		91FD45B51C77D31E00A606AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 572EF2191B51F16C00EEBB58;
+			remoteInfo = "SocketIO-iOS";
+		};
+		91FD45B71C77D31E00A606AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 572EF2241B51F16C00EEBB58;
+			remoteInfo = "SocketIO-iOSTests";
+		};
+		91FD45B91C77D31E00A606AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 572EF2381B51F18A00EEBB58;
+			remoteInfo = "SocketIO-Mac";
+		};
+		91FD45BB1C77D31E00A606AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 572EF2421B51F18A00EEBB58;
+			remoteInfo = "SocketIO-MacTests";
+		};
+		91FD45BD1C77D31E00A606AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57634A161BD9B46A00E19CD7;
+			remoteInfo = "SocketIO-tvOS";
+		};
+		91FD45BF1C77D31E00A606AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57634A3B1BD9B46D00E19CD7;
+			remoteInfo = "SocketIO-tvOSTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,6 +104,7 @@
 		91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room_ShooterUITests.swift; sourceTree = "<group>"; };
 		91FD45811C77B2E200A606AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91FD458D1C77B68B00A606AF /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Socket.IO-Client-Swift.xcodeproj"; path = "../socket.io-client-swift-master/Socket.IO-Client-Swift.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FD45C11C77D33F00A606AF /* SocketIOClientSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +143,7 @@
 		91FD45541C77B2E100A606AF = {
 			isa = PBXGroup;
 			children = (
+				91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */,
 				91FD455F1C77B2E100A606AF /* Room Shooter */,
 				91FD45731C77B2E200A606AF /* Room ShooterTests */,
 				91FD457E1C77B2E200A606AF /* Room ShooterUITests */,
@@ -111,7 +157,6 @@
 				91FD455D1C77B2E100A606AF /* Room Shooter.app */,
 				91FD45701C77B2E200A606AF /* Room ShooterTests.xctest */,
 				91FD457B1C77B2E200A606AF /* Room ShooterUITests.xctest */,
-				9A75DFFC1C77B4D700C547B8 /* Room Shooter Server */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +191,19 @@
 				91FD45811C77B2E200A606AF /* Info.plist */,
 			);
 			path = "Room ShooterUITests";
+			sourceTree = "<group>";
+		};
+		91FD45AD1C77D31E00A606AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91FD45B61C77D31E00A606AF /* SocketIOClientSwift.framework */,
+				91FD45B81C77D31E00A606AF /* SocketIO-iOSTests.xctest */,
+				91FD45BA1C77D31E00A606AF /* SocketIOClientSwift.framework */,
+				91FD45BC1C77D31E00A606AF /* SocketIO-MacTests.xctest */,
+				91FD45BE1C77D31E00A606AF /* SocketIO.framework */,
+				91FD45C01C77D31E00A606AF /* SocketIO-tvOSTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +276,6 @@
 			);
 			name = "Room Shooter Server";
 			productName = "Room Shooter Server";
-			productReference = 9A75DFFC1C77B4D700C547B8 /* Room Shooter Server */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -258,6 +315,12 @@
 			mainGroup = 91FD45541C77B2E100A606AF;
 			productRefGroup = 91FD455E1C77B2E100A606AF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 91FD45AD1C77D31E00A606AF /* Products */;
+					ProjectRef = 91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				91FD455C1C77B2E100A606AF /* Room Shooter */,
@@ -267,6 +330,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		91FD45B61C77D31E00A606AF /* SocketIOClientSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketIOClientSwift.framework;
+			remoteRef = 91FD45B51C77D31E00A606AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91FD45B81C77D31E00A606AF /* SocketIO-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SocketIO-iOSTests.xctest";
+			remoteRef = 91FD45B71C77D31E00A606AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91FD45BA1C77D31E00A606AF /* SocketIOClientSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketIOClientSwift.framework;
+			remoteRef = 91FD45B91C77D31E00A606AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91FD45BC1C77D31E00A606AF /* SocketIO-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SocketIO-MacTests.xctest";
+			remoteRef = 91FD45BB1C77D31E00A606AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91FD45BE1C77D31E00A606AF /* SocketIO.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketIO.framework;
+			remoteRef = 91FD45BD1C77D31E00A606AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		91FD45C01C77D31E00A606AF /* SocketIO-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SocketIO-tvOSTests.xctest";
+			remoteRef = 91FD45BF1C77D31E00A606AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		91FD455B1C77B2E100A606AF /* Resources */ = {
@@ -582,6 +690,7 @@
 				9A75E0011C77B4D700C547B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

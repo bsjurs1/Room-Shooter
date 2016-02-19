@@ -8,9 +8,11 @@
 
 import SpriteKit
 import Darwin
+import Foundation
+import SocketIOClientSwift
 
 class GameScene: SKScene {
-    
+
     let player = SKSpriteNode(imageNamed:"Spaceship");
     var wPressed = false;
     var aPressed = false;
@@ -18,7 +20,25 @@ class GameScene: SKScene {
     var dPressed = false;
     
     override func didMoveToView(view: SKView) {
-
+        
+        let socket = SocketIOClient(socketURL: NSURL(string: "http://192.168.1.113:3000")!, options: [.Log(true), .ForcePolling(true)])
+        
+        socket.on("connect") {data, ack in
+            print("socket connected")
+        }
+        
+        socket.on("currentAmount") {data, ack in
+            if let cur = data[0] as? Double {
+                socket.emitWithAck("canUpdate", cur)(timeoutAfter: 0) {data in
+                    socket.emit("update", ["amount": cur + 2.50])
+                }
+                
+                ack.with("Got your currentAmount", "dude")
+            }
+        }
+        
+        socket.connect()
+        
         player.position = CGPointMake(200, 200)
         
         player.setScale(0.5)
