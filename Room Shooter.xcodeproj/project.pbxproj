@@ -14,6 +14,7 @@
 		91FD456A1C77B2E200A606AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45681C77B2E200A606AF /* MainMenu.xib */; };
 		91FD45751C77B2E200A606AF /* Room_ShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD45741C77B2E200A606AF /* Room_ShooterTests.swift */; };
 		91FD45801C77B2E200A606AF /* Room_ShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */; };
+		9A75DFFF1C77B4D700C547B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A75DFFE1C77B4D700C547B8 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9A75DFFA1C77B4D700C547B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		91FD455D1C77B2E100A606AF /* Room Shooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Room Shooter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FD45601C77B2E100A606AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +60,8 @@
 		91FD457B1C77B2E200A606AF /* Room ShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Room ShooterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room_ShooterUITests.swift; sourceTree = "<group>"; };
 		91FD45811C77B2E200A606AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A75DFFC1C77B4D700C547B8 /* Room Shooter Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Room Shooter Server"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A75DFFE1C77B4D700C547B8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +86,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A75DFF91C77B4D700C547B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +102,7 @@
 				91FD455F1C77B2E100A606AF /* Room Shooter */,
 				91FD45731C77B2E200A606AF /* Room ShooterTests */,
 				91FD457E1C77B2E200A606AF /* Room ShooterUITests */,
+				9A75DFFD1C77B4D700C547B8 /* Room Shooter Server */,
 				91FD455E1C77B2E100A606AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +113,7 @@
 				91FD455D1C77B2E100A606AF /* Room Shooter.app */,
 				91FD45701C77B2E200A606AF /* Room ShooterTests.xctest */,
 				91FD457B1C77B2E200A606AF /* Room ShooterUITests.xctest */,
+				9A75DFFC1C77B4D700C547B8 /* Room Shooter Server */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +147,14 @@
 				91FD45811C77B2E200A606AF /* Info.plist */,
 			);
 			path = "Room ShooterUITests";
+			sourceTree = "<group>";
+		};
+		9A75DFFD1C77B4D700C547B8 /* Room Shooter Server */ = {
+			isa = PBXGroup;
+			children = (
+				9A75DFFE1C77B4D700C547B8 /* main.swift */,
+			);
+			path = "Room Shooter Server";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +213,23 @@
 			productReference = 91FD457B1C77B2E200A606AF /* Room ShooterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9A75DFFB1C77B4D700C547B8 /* Room Shooter Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A75E0021C77B4D700C547B8 /* Build configuration list for PBXNativeTarget "Room Shooter Server" */;
+			buildPhases = (
+				9A75DFF81C77B4D700C547B8 /* Sources */,
+				9A75DFF91C77B4D700C547B8 /* Frameworks */,
+				9A75DFFA1C77B4D700C547B8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Room Shooter Server";
+			productName = "Room Shooter Server";
+			productReference = 9A75DFFC1C77B4D700C547B8 /* Room Shooter Server */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +251,9 @@
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 91FD455C1C77B2E100A606AF;
 					};
+					9A75DFFB1C77B4D700C547B8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 91FD45581C77B2E100A606AF /* Build configuration list for PBXProject "Room Shooter" */;
@@ -220,6 +272,7 @@
 				91FD455C1C77B2E100A606AF /* Room Shooter */,
 				91FD456F1C77B2E200A606AF /* Room ShooterTests */,
 				91FD457A1C77B2E200A606AF /* Room ShooterUITests */,
+				9A75DFFB1C77B4D700C547B8 /* Room Shooter Server */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +327,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FD45801C77B2E200A606AF /* Room_ShooterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A75DFF81C77B4D700C547B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A75DFFF1C77B4D700C547B8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +523,21 @@
 			};
 			name = Release;
 		};
+		9A75E0001C77B4D700C547B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A75E0011C77B4D700C547B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -481,6 +557,7 @@
 				91FD45861C77B2E200A606AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91FD45871C77B2E200A606AF /* Build configuration list for PBXNativeTarget "Room ShooterTests" */ = {
 			isa = XCConfigurationList;
@@ -489,12 +566,22 @@
 				91FD45891C77B2E200A606AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91FD458A1C77B2E200A606AF /* Build configuration list for PBXNativeTarget "Room ShooterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91FD458B1C77B2E200A606AF /* Debug */,
 				91FD458C1C77B2E200A606AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A75E0021C77B4D700C547B8 /* Build configuration list for PBXNativeTarget "Room Shooter Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A75E0001C77B4D700C547B8 /* Debug */,
+				9A75E0011C77B4D700C547B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
