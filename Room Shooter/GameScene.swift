@@ -7,34 +7,113 @@
 //
 
 import SpriteKit
+import Darwin
 
 class GameScene: SKScene {
+    
+    let player = SKSpriteNode(imageNamed:"Spaceship");
+    var wPressed = false;
+    var aPressed = false;
+    var sPressed = false;
+    var dPressed = false;
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!"
-        myLabel.fontSize = 45
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+
+        player.position = CGPointMake(200, 200)
         
-        self.addChild(myLabel)
+        player.setScale(0.5)
+        
+        self.addChild(player)
+        
+        self.backgroundColor = NSColor.blackColor();
+        
     }
     
     override func mouseDown(theEvent: NSEvent) {
-        /* Called when a mouse click occurs */
+
+    }
+    
+    override func mouseDragged(theEvent: NSEvent) {
         
-        let location = theEvent.locationInNode(self)
+        let mousePosition = theEvent.locationInNode(self);
+        let playerPosition = player.position;
+        let deltaX = playerPosition.x - mousePosition.x;
+        let deltaY = playerPosition.y - mousePosition.y;
+        let rotationAngle = atan2(deltaY,deltaX)+CGFloat(M_PI/2);
         
-        let sprite = SKSpriteNode(imageNamed:"Spaceship")
-        sprite.position = location;
-        sprite.setScale(0.5)
+        player.zRotation = rotationAngle;
         
-        let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-        sprite.runAction(SKAction.repeatActionForever(action))
+    }
+    
+    override func keyDown(theEvent: NSEvent) {
+ 
+        switch(theEvent.characters!){
+            case "w":
+                wPressed=true;
+                break;
+            case "a":
+                aPressed=true;
+                break;
+            case "s":
+                sPressed=true;
+                break;
+            case "d":
+                dPressed=true;
+                break;
+            case "":
+                break;
+            default:
+                print("Other pressed");
+                break;
+        }
+    }
+    
+    override func keyUp(theEvent: NSEvent) {
         
-        self.addChild(sprite)
+        switch(theEvent.characters!){
+            case "w":
+                wPressed=false;
+                break;
+            case "a":
+                aPressed=false;
+                break;
+            case "s":
+                sPressed=false;
+                break;
+            case "d":
+                dPressed=false;
+                break;
+            case "":
+                break;
+            default:
+                print("Other pressed");
+                break;
+        }
+
+        
     }
     
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+        
+        var moveX = player.position.x;
+        var moveY = player.position.y;
+        
+        if(wPressed==true){
+            moveY+=20;
+        }
+        if(aPressed==true){
+            moveX-=20;
+        }
+        if(sPressed==true){
+            moveY-=20;
+        }
+        if(dPressed==true){
+            moveX+=20;
+        }
+        
+        let movePlayer = SKAction.moveTo(CGPointMake(moveX, moveY), duration: 0.1);
+        player.runAction(movePlayer);
+
+        
     }
 }
