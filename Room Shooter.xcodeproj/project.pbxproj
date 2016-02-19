@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91FD45611C77B2E100A606AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD45601C77B2E100A606AF /* AppDelegate.swift */; };
+		91FD45631C77B2E100A606AF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD45621C77B2E100A606AF /* GameScene.swift */; };
+		91FD45651C77B2E100A606AF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45641C77B2E100A606AF /* GameScene.sks */; };
+		91FD45671C77B2E100A606AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45661C77B2E100A606AF /* Assets.xcassets */; };
+		91FD456A1C77B2E200A606AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45681C77B2E200A606AF /* MainMenu.xib */; };
+		91FD45751C77B2E200A606AF /* Room_ShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD45741C77B2E200A606AF /* Room_ShooterTests.swift */; };
+		91FD45801C77B2E200A606AF /* Room_ShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91FD45711C77B2E200A606AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91FD45551C77B2E100A606AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91FD455C1C77B2E100A606AF;
+			remoteInfo = "Room Shooter";
+		};
+		91FD457C1C77B2E200A606AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91FD45551C77B2E100A606AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91FD455C1C77B2E100A606AF;
+			remoteInfo = "Room Shooter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91FD455D1C77B2E100A606AF /* Room Shooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Room Shooter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91FD45601C77B2E100A606AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91FD45621C77B2E100A606AF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		91FD45641C77B2E100A606AF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		91FD45661C77B2E100A606AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91FD45691C77B2E200A606AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		91FD456B1C77B2E200A606AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91FD45701C77B2E200A606AF /* Room ShooterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Room ShooterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91FD45741C77B2E200A606AF /* Room_ShooterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room_ShooterTests.swift; sourceTree = "<group>"; };
+		91FD45761C77B2E200A606AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91FD457B1C77B2E200A606AF /* Room ShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Room ShooterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room_ShooterUITests.swift; sourceTree = "<group>"; };
+		91FD45811C77B2E200A606AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91FD455A1C77B2E100A606AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91FD456D1C77B2E200A606AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91FD45781C77B2E200A606AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91FD45541C77B2E100A606AF = {
+			isa = PBXGroup;
+			children = (
+				91FD455F1C77B2E100A606AF /* Room Shooter */,
+				91FD45731C77B2E200A606AF /* Room ShooterTests */,
+				91FD457E1C77B2E200A606AF /* Room ShooterUITests */,
+				91FD455E1C77B2E100A606AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91FD455E1C77B2E100A606AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91FD455D1C77B2E100A606AF /* Room Shooter.app */,
+				91FD45701C77B2E200A606AF /* Room ShooterTests.xctest */,
+				91FD457B1C77B2E200A606AF /* Room ShooterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91FD455F1C77B2E100A606AF /* Room Shooter */ = {
+			isa = PBXGroup;
+			children = (
+				91FD45601C77B2E100A606AF /* AppDelegate.swift */,
+				91FD45621C77B2E100A606AF /* GameScene.swift */,
+				91FD45641C77B2E100A606AF /* GameScene.sks */,
+				91FD45661C77B2E100A606AF /* Assets.xcassets */,
+				91FD45681C77B2E200A606AF /* MainMenu.xib */,
+				91FD456B1C77B2E200A606AF /* Info.plist */,
+			);
+			path = "Room Shooter";
+			sourceTree = "<group>";
+		};
+		91FD45731C77B2E200A606AF /* Room ShooterTests */ = {
+			isa = PBXGroup;
+			children = (
+				91FD45741C77B2E200A606AF /* Room_ShooterTests.swift */,
+				91FD45761C77B2E200A606AF /* Info.plist */,
+			);
+			path = "Room ShooterTests";
+			sourceTree = "<group>";
+		};
+		91FD457E1C77B2E200A606AF /* Room ShooterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */,
+				91FD45811C77B2E200A606AF /* Info.plist */,
+			);
+			path = "Room ShooterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91FD455C1C77B2E100A606AF /* Room Shooter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91FD45841C77B2E200A606AF /* Build configuration list for PBXNativeTarget "Room Shooter" */;
+			buildPhases = (
+				91FD45591C77B2E100A606AF /* Sources */,
+				91FD455A1C77B2E100A606AF /* Frameworks */,
+				91FD455B1C77B2E100A606AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Room Shooter";
+			productName = "Room Shooter";
+			productReference = 91FD455D1C77B2E100A606AF /* Room Shooter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91FD456F1C77B2E200A606AF /* Room ShooterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91FD45871C77B2E200A606AF /* Build configuration list for PBXNativeTarget "Room ShooterTests" */;
+			buildPhases = (
+				91FD456C1C77B2E200A606AF /* Sources */,
+				91FD456D1C77B2E200A606AF /* Frameworks */,
+				91FD456E1C77B2E200A606AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91FD45721C77B2E200A606AF /* PBXTargetDependency */,
+			);
+			name = "Room ShooterTests";
+			productName = "Room ShooterTests";
+			productReference = 91FD45701C77B2E200A606AF /* Room ShooterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		91FD457A1C77B2E200A606AF /* Room ShooterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91FD458A1C77B2E200A606AF /* Build configuration list for PBXNativeTarget "Room ShooterUITests" */;
+			buildPhases = (
+				91FD45771C77B2E200A606AF /* Sources */,
+				91FD45781C77B2E200A606AF /* Frameworks */,
+				91FD45791C77B2E200A606AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91FD457D1C77B2E200A606AF /* PBXTargetDependency */,
+			);
+			name = "Room ShooterUITests";
+			productName = "Room ShooterUITests";
+			productReference = 91FD457B1C77B2E200A606AF /* Room ShooterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91FD45551C77B2E100A606AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Sjursen Software";
+				TargetAttributes = {
+					91FD455C1C77B2E100A606AF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					91FD456F1C77B2E200A606AF = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 91FD455C1C77B2E100A606AF;
+					};
+					91FD457A1C77B2E200A606AF = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 91FD455C1C77B2E100A606AF;
+					};
+				};
+			};
+			buildConfigurationList = 91FD45581C77B2E100A606AF /* Build configuration list for PBXProject "Room Shooter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91FD45541C77B2E100A606AF;
+			productRefGroup = 91FD455E1C77B2E100A606AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91FD455C1C77B2E100A606AF /* Room Shooter */,
+				91FD456F1C77B2E200A606AF /* Room ShooterTests */,
+				91FD457A1C77B2E200A606AF /* Room ShooterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91FD455B1C77B2E100A606AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FD45671C77B2E100A606AF /* Assets.xcassets in Resources */,
+				91FD45651C77B2E100A606AF /* GameScene.sks in Resources */,
+				91FD456A1C77B2E200A606AF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91FD456E1C77B2E200A606AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91FD45791C77B2E200A606AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91FD45591C77B2E100A606AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FD45631C77B2E100A606AF /* GameScene.swift in Sources */,
+				91FD45611C77B2E100A606AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91FD456C1C77B2E200A606AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FD45751C77B2E200A606AF /* Room_ShooterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91FD45771C77B2E200A606AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FD45801C77B2E200A606AF /* Room_ShooterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91FD45721C77B2E200A606AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91FD455C1C77B2E100A606AF /* Room Shooter */;
+			targetProxy = 91FD45711C77B2E200A606AF /* PBXContainerItemProxy */;
+		};
+		91FD457D1C77B2E200A606AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91FD455C1C77B2E100A606AF /* Room Shooter */;
+			targetProxy = 91FD457C1C77B2E200A606AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91FD45681C77B2E200A606AF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91FD45691C77B2E200A606AF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91FD45821C77B2E200A606AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91FD45831C77B2E200A606AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		91FD45851C77B2E200A606AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Room Shooter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sjursen.Software.Room-Shooter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		91FD45861C77B2E200A606AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Room Shooter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sjursen.Software.Room-Shooter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		91FD45881C77B2E200A606AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Room ShooterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sjursen.Software.Room-ShooterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Room Shooter.app/Contents/MacOS/Room Shooter";
+			};
+			name = Debug;
+		};
+		91FD45891C77B2E200A606AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Room ShooterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sjursen.Software.Room-ShooterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Room Shooter.app/Contents/MacOS/Room Shooter";
+			};
+			name = Release;
+		};
+		91FD458B1C77B2E200A606AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Room ShooterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sjursen.Software.Room-ShooterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Room Shooter";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		91FD458C1C77B2E200A606AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Room ShooterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sjursen.Software.Room-ShooterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Room Shooter";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91FD45581C77B2E100A606AF /* Build configuration list for PBXProject "Room Shooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91FD45821C77B2E200A606AF /* Debug */,
+				91FD45831C77B2E200A606AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91FD45841C77B2E200A606AF /* Build configuration list for PBXNativeTarget "Room Shooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91FD45851C77B2E200A606AF /* Debug */,
+				91FD45861C77B2E200A606AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		91FD45871C77B2E200A606AF /* Build configuration list for PBXNativeTarget "Room ShooterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91FD45881C77B2E200A606AF /* Debug */,
+				91FD45891C77B2E200A606AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		91FD458A1C77B2E200A606AF /* Build configuration list for PBXNativeTarget "Room ShooterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91FD458B1C77B2E200A606AF /* Debug */,
+				91FD458C1C77B2E200A606AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91FD45551C77B2E100A606AF /* Project object */;
+}
