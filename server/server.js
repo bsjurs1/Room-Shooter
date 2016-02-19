@@ -5,10 +5,8 @@ serverSocket.on('connection', function(client) {
 
 	console.log("connection: " + client.id);
 
-	client.on("addPlayer", function(data) {
-    	serverSocket.emit("addPlayer", 
-    		{ xLocation: 100, yLocation: 100, orientation: 1 });
-    });
+	client.broadcast.emit("addPlayer", 
+    	{ xLocation: 100, yLocation: 100, orientation: 1 });
 
     client.on("disconnect", function() {
     	console.log("disconnect: " + client.id);
