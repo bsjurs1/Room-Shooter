@@ -5,11 +5,16 @@ serverSocket.on('connection', function(client) {
 
 	console.log("connection: " + client.id);
 
+	client.on("addPlayer", function(data) {
+    	serverSocket.emit("addPlayer", 
+    		{ xLocation: 100, yLocation: 100, orientation: 1 });
+    });
+
     client.on("disconnect", function() {
     	console.log("disconnect: " + client.id);
     });
 
-    client.on("move player", function(data) {
-    	console.log("move player: " + data);
+    client.on("update", function(data) {
+    	client.broadcast.emit("update", data);
     });
 });
