@@ -14,7 +14,6 @@
 		91FD456A1C77B2E200A606AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45681C77B2E200A606AF /* MainMenu.xib */; };
 		91FD45751C77B2E200A606AF /* Room_ShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD45741C77B2E200A606AF /* Room_ShooterTests.swift */; };
 		91FD45801C77B2E200A606AF /* Room_ShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */; };
-		9A75DFFF1C77B4D700C547B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A75DFFE1C77B4D700C547B8 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +60,6 @@
 		91FD457F1C77B2E200A606AF /* Room_ShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room_ShooterUITests.swift; sourceTree = "<group>"; };
 		91FD45811C77B2E200A606AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A75DFFC1C77B4D700C547B8 /* Room Shooter Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Room Shooter Server"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A75DFFE1C77B4D700C547B8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 				91FD455F1C77B2E100A606AF /* Room Shooter */,
 				91FD45731C77B2E200A606AF /* Room ShooterTests */,
 				91FD457E1C77B2E200A606AF /* Room ShooterUITests */,
-				9A75DFFD1C77B4D700C547B8 /* Room Shooter Server */,
 				91FD455E1C77B2E100A606AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,14 +144,6 @@
 				91FD45811C77B2E200A606AF /* Info.plist */,
 			);
 			path = "Room ShooterUITests";
-			sourceTree = "<group>";
-		};
-		9A75DFFD1C77B4D700C547B8 /* Room Shooter Server */ = {
-			isa = PBXGroup;
-			children = (
-				9A75DFFE1C77B4D700C547B8 /* main.swift */,
-			);
-			path = "Room Shooter Server";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A75DFFF1C77B4D700C547B8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,15 +514,22 @@
 		9A75E0001C77B4D700C547B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Room Shooter Server-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9A75E0011C77B4D700C547B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Room Shooter Server-Bridging-Header.h";
 			};
 			name = Release;
 		};
