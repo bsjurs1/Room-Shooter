@@ -8,6 +8,9 @@ serverSocket.on('connection', function(client) {
 	client.broadcast.emit("addPlayer", 
     	{ xLocation: 100, yLocation: 100, zRotation: 1 });
 
+	client.emit("addPlayer", 
+    	{ xLocation: 100, yLocation: 100, zRotation: 1 });
+
     client.on("disconnect", function() {
     	console.log("disconnect: " + client.id);
     });
