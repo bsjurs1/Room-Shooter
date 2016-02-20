@@ -82,11 +82,12 @@ class GameScene: SKScene {
                 }
                 
             }
-            
-            self.players[0].position.x = newPlayerX;
-            self.players[0].position.y = newPlayerY;
-            self.players[0].zRotation = newPlayerZRotation;
-            self.players[0].setScale(0.5);
+            if (!self.players.isEmpty){
+                self.players[0].position.x = newPlayerX;
+                self.players[0].position.y = newPlayerY;
+                self.players[0].zRotation = newPlayerZRotation;
+                self.players[0].setScale(0.5);
+            }
             
         }
 
