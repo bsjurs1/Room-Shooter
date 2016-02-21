@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916B12611C78A60A00E699B4 /* rocket.001.png in Resources */ = {isa = PBXBuildFile; fileRef = 916B12601C78A60A00E699B4 /* rocket.001.png */; };
+		916B126E1C78B4B900E699B4 /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 916B126C1C78B4B900E699B4 /* Fire.sks */; };
+		916B126F1C78B4B900E699B4 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 916B126D1C78B4B900E699B4 /* spark.png */; };
 		91FD45611C77B2E100A606AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD45601C77B2E100A606AF /* AppDelegate.swift */; };
 		91FD45631C77B2E100A606AF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD45621C77B2E100A606AF /* GameScene.swift */; };
 		91FD45651C77B2E100A606AF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45641C77B2E100A606AF /* GameScene.sks */; };
@@ -90,6 +93,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		916B12601C78A60A00E699B4 /* rocket.001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rocket.001.png; path = ../../Documents/rocket/rocket.001.png; sourceTree = "<group>"; };
+		916B126C1C78B4B900E699B4 /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
+		916B126D1C78B4B900E699B4 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		91FD455D1C77B2E100A606AF /* Room Shooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Room Shooter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FD45601C77B2E100A606AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91FD45621C77B2E100A606AF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 		91FD45541C77B2E100A606AF = {
 			isa = PBXGroup;
 			children = (
+				916B12601C78A60A00E699B4 /* rocket.001.png */,
 				91FD45AC1C77D31E00A606AF /* Socket.IO-Client-Swift.xcodeproj */,
 				91FD455F1C77B2E100A606AF /* Room Shooter */,
 				91FD45731C77B2E200A606AF /* Room ShooterTests */,
@@ -166,6 +173,8 @@
 			children = (
 				91FD45601C77B2E100A606AF /* AppDelegate.swift */,
 				91FD45621C77B2E100A606AF /* GameScene.swift */,
+				916B126C1C78B4B900E699B4 /* Fire.sks */,
+				916B126D1C78B4B900E699B4 /* spark.png */,
 				91FD458D1C77B68B00A606AF /* Network.swift */,
 				91FD45641C77B2E100A606AF /* GameScene.sks */,
 				91FD45661C77B2E100A606AF /* Assets.xcassets */,
@@ -381,8 +390,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916B12611C78A60A00E699B4 /* rocket.001.png in Resources */,
+				916B126F1C78B4B900E699B4 /* spark.png in Resources */,
 				91FD45671C77B2E100A606AF /* Assets.xcassets in Resources */,
 				91FD45651C77B2E100A606AF /* GameScene.sks in Resources */,
+				916B126E1C78B4B900E699B4 /* Fire.sks in Resources */,
 				91FD456A1C77B2E200A606AF /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
