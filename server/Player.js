@@ -15,15 +15,14 @@ Player.prototype = {
 	update: function() {
 		// TODO: update player position
 	},
-	move: function(key) {
-		if (key == "W") {
-			this.y += this.moveSpeed;
-		} else if (key == "S") {
+	move: function(directions) {
+		if (directions.up)
 			this.y -= this.moveSpeed;
-		} else if (key == "A") {
+		if (directions.down)
+			this.y += this.moveSpeed;
+		if (directions.left)
 			this.x -= this.moveSpeed;
-		} else if (key == "D") {
-			this.x += this.moveSpeed;
-		}
+		if (directions.right)
+			this.x += this.moveSpeed
 	}
 }

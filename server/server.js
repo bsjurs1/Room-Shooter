@@ -20,18 +20,18 @@ ServerSocket.on('connection', function(client) {
     client.emit("init", players);
     client.broadcast.emit("add", player);
 
-    client.on("disconnect", function() {
+    client.once("disconnect", function() {
     	console.log("disconnect: " + client.id);
         client.broadcast.emit("remove", client.id);
         players = players.filter(function(player) {
-            if (player.id != client.player.id)
+            if (player.id != client.id)
                 return player;
         });
         console.log("There are currently " + players.length + " player(s) active");
     });
 
-    client.on("move", function(data) {
-        client.player.move(data);
+    client.on("move", function(directions) {
+        client.player.move(directions);
     });
 });
 
